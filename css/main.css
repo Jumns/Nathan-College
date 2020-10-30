@@ -571,7 +571,7 @@ hr {
 /* about section */
 .about-span {
   background-color: #f4f4f4;
-  padding: 6px;
+  padding: 0.2em;
   border-radius: 5px;
 }
 .about-img-shadow {
@@ -922,9 +922,17 @@ hr {
     width: 140px;
   }
 
+  .q-contact {
+    font-size: 13px;
+  }
+
   .schools-90 {
     display: flex;
     justify-content: center;
     width: 100% !important;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 }
