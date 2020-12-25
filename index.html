@@ -26,6 +26,8 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- aos animation -->
+    <link rel="stylesheet" href="./aos/aos.css" />
   </head>
   <body>
     <header>
@@ -43,6 +45,7 @@
         </a>
         <ul
           class="list-unstyled d-flex flex-column justify-content-center py-4"
+          data-aos="fade-in-down"
         >
           <li>
             <i class="fa fa-envelope"></i>
@@ -69,7 +72,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          class="navbar-toggler mr-auto"
+          class="navbar-toggler ml-auto"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -232,13 +235,18 @@
       <div class="container pt-5 pb-4">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="text-uppercase" style="font-family: 'Times New Roman'">
+            <h1 class="text-uppercase" data-aos="zoom-in">
               enroll in our school
             </h1>
           </div>
         </div>
+
         <div class="row justify-content-center">
-          <div class="col-md-3 mt-5">
+          <div
+            class="col-lg-3 col-sm-6 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
             <div class="container-0">
               <img src="./img/preschool.jpg" class="img-fluid image" alt="" />
               <span class="name-line-1"></span>
@@ -252,7 +260,11 @@
             </div>
           </div>
 
-          <div class="col-md-3 mt-5">
+          <div
+            class="col-lg-3 col-sm-6 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <div class="container-0">
               <img src="./img/Junior.jpg" class="img-fluid image" alt="" />
               <span class="name-line-2"></span>
@@ -266,7 +278,11 @@
             </div>
           </div>
 
-          <div class="col-md-3 mt-5">
+          <div
+            class="col-lg-3 col-sm-6 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
             <div class="container-0">
               <img src="./img/high.jpg" class="img-fluid image" alt="" />
               <span class="name-line-3"></span>
@@ -280,7 +296,11 @@
             </div>
           </div>
 
-          <div class="col-md-3 mt-5">
+          <div
+            class="col-lg-3 col-sm-6 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
             <div class="container-0">
               <img src="./img/Advanced.jpg" class="img-fluid image" alt="" />
               <span class="name-line-4"></span>
@@ -307,7 +327,9 @@
         <div class="row">
           <div
             class="col-md-4 py-5 text-white position-relative"
-            style="background-color: rgb(99, 190, 7)"
+            style="background-color: rgb(69, 131, 7)"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           >
             <div class="wrap">
               <img
@@ -334,6 +356,8 @@
           <div
             class="col-md-4 py-5 text-white section-position"
             style="background-color: rgb(133, 22, 7)"
+            data-aos="zoom-in"
+            data-aos-delay="450"
           >
             <div class="wrap">
               <img src="./img/calendar.png" alt="" class="mx-2" />
@@ -355,7 +379,9 @@
 
           <div
             class="col-md-4 py-5 text-white section-position"
-            style="background-color: lawngreen"
+            style="background-color: rgb(190, 147, 6)"
+            data-aos="zoom-in"
+            data-aos-delay="550"
           >
             <div class="wrap">
               <img src="./img/newsletter.png" alt="" class="mx-2" />
@@ -384,7 +410,11 @@
       <div class="container">
         <div class="row">
           <!-- pic -->
-          <div class="col-md-6 d-flex align-items-center">
+          <div
+            class="col-md-6 d-flex align-items-center"
+            data-aos="fade-right"
+            data-aos-delay="250"
+          >
             <img
               src="./img/school.png"
               alt="School Compound"
@@ -393,15 +423,18 @@
             />
           </div>
           <!-- brief words -->
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-left" data-aos-delay="250">
             <h2
               class="text-uppercase"
               style="font-weight: 800; color: chartreuse"
+              data-aos="zoom-in"
+              data-aos-delay="550"
             >
-              <span class="span text-danger about-span">welcome to</span> <br />
+              <span class="span text-danger about-span mb-5">welcome to</span>
+              <br />
               nathan College
             </h2>
-            <p class="py-3 text-white lead">
+            <p class="text-white lead">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               blanditiis dolores, eveniet cum saepe architecto.
             </p>
@@ -421,17 +454,12 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1
-              class="text-uppercase pb-5"
-              style="font-family: 'Times New Roman'"
-            >
-              news and events
-            </h1>
+            <h1 class="text-uppercase pb-5">news and events</h1>
           </div>
         </div>
         <div class="row">
           <!-- inter-house -->
-          <div class="col-md-4 py-3">
+          <div class="col-md-4 py-3" data-aos="fade-down" data-aos-delay="150">
             <div class="card position-relative card-shadow">
               <img
                 src="./img/Inter-house.jpg"
@@ -443,7 +471,7 @@
                   <i class="fa fa-info text-white"></i></span
               ></a>
               <div class="card-body">
-                <h5 class="card-title mt-3">INTER-HOUSE SPORT WEEK</h5>
+                <h6 class="card-title mt-3">INTER-HOUSE SPORT WEEK</h6>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -455,7 +483,7 @@
           <!-- end of inter-house -->
 
           <!-- Val -->
-          <div class="col-md-4 py-3">
+          <div class="col-md-4 py-3" data-aos="fade-down" data-aos-delay="250">
             <div class="card position-relative card-shadow">
               <img
                 src="./img/vball.jpg"
@@ -467,7 +495,7 @@
                   <i class="fa fa-info text-white"></i></span
               ></a>
               <div class="card-body">
-                <h5 class="card-title mt-3">VALENTINE CHARITY BALL</h5>
+                <h6 class="card-title mt-3">VALENTINE CHARITY BALL</h6>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -478,16 +506,14 @@
           </div>
           <!-- end of val -->
 
-          <div class="col-md-4 py-3">
+          <div class="col-md-4 py-3" data-aos="fade-down" data-aos-delay="350">
             <div class="card card-shadow">
-              <img src="..." class="card-img-top img-fluid" alt="" />
+              <!-- <img src="..." class="card-img-top img-fluid" alt="" /> -->
               <div
                 class="card-header bg-teal d-flex align-items-center justify-content-center"
               >
                 <i class="fa fa-clock fa-2x text-white mr-3"></i>
-                <h4 class="text-center text-white" style="font-family: cursive">
-                  UPCOMING EVENTS
-                </h4>
+                <h6 class="text-center text-white">UPCOMING EVENTS</h6>
               </div>
               <div class="card-body">
                 <p>There are no upcoming events at this time.</p>
@@ -581,19 +607,19 @@
           <div class="col-md-8">
             <div class="row">
               <div class="col-lg-3 text-center py-3">
-                <span class="text-teal h2 d-block">3423</span>
+                <span class="text-teal h2 d-block" id="clients">0+</span>
                 <span>Happy Clients</span>
               </div>
               <div class="col-lg-3 text-center py-3">
-                <span class="text-yellow h2 d-block">4398</span>
-                <span>Members</span>
+                <span class="text-yellow h2 d-block" id="students">0+</span>
+                <span>Students</span>
               </div>
               <div class="col-lg-3 text-center py-3">
-                <span class="text-success h2 d-block">50+</span>
+                <span class="text-success h2 d-block count" id="staffs">1</span>
                 <span>Staffs</span>
               </div>
               <div class="col-lg-3 text-center py-3">
-                <span class="text-danger h2 d-block">2000+</span>
+                <span class="text-danger h2 d-block" id="followers">0+</span>
                 <span>Our Followers</span>
               </div>
             </div>
@@ -603,7 +629,7 @@
     </div>
     <!-- end of testimonies -->
 
-    <div class="site-section py-5 bg-mmarine">
+    <div class="site-section bg-success py-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 mb-sm-4 mb-xs-4">
@@ -665,7 +691,11 @@
             &copy; 2020 Nathan College. All right reserverd. <br />
             Designed with <i class="fa fa-heart text-danger"></i> &
             <i class="fa fa-coffee" style="color: chocolate"></i> by:
-            <a href="#">Jnathan</a>
+            <a
+              href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+              target="_blank"
+              >Jnathan</a
+            >
           </div>
 
           <div class="col-xs-4">
@@ -677,13 +707,21 @@
                 <a href="#"><i class="fab fa-facebook mx-2"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-whatsapp mx-2"></i></a>
+                <a
+                  href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+                  target="_blank"
+                  ><i class="fab fa-whatsapp mx-2"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-instagram mx-2"></i></a>
+                <a href="https://instagram.com/mr_jumns"
+                  ><i class="fab fa-instagram mx-2"></i
+                ></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-twitter mx-2"></i></a>
+                <a href="https://twitter.com/Mr_Jumns"
+                  ><i class="fab fa-twitter mx-2"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -719,9 +757,6 @@
     </section>
     <!-- end of footer section -->
 
-    <!-- <div class="jumbotron">
-      <p class="display-3">Nathan College</p>
-    </div> -->
     <script src="./js/jquery.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/jquery.animateNumber.min.js"></script>

@@ -1,24 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500&display=swap");
+:root {
+  --bg-success: limegreen !important;
+}
 body {
+  line-height: 1.7;
+  font-size: 15px;
+}
+/* resets */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  line-height: 1.7;
+  box-sizing: border-box;
 }
 
 /* typograpy */
+h1,
 h2,
+h3,
 h4,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
+h5,
+h6 {
   font-weight: 300;
-  color: #364d59;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #343a40;
 }
-.paragraph {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+h5 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+a:hover {
+  text-decoration: none;
+  color: limegreen;
+}
+
+a > h6:hover {
+  color: limegreen;
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
   font-weight: 200;
-  line-height: 1.7;
+}
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .text-cursive {
@@ -126,6 +160,15 @@ hr {
 
 /* end of social media */
 
+/* mission vision and standard */
+.mission:hover {
+  transform: scale(1.1) !important;
+}
+
+.mission:hover > img {
+  transform: rotate(360deg) !important;
+}
+
 /* advanced-course-icons */
 .advanced-course-icons {
   font-size: 3em;
@@ -153,7 +196,7 @@ hr {
 
 /* testimonial-3-wrap */
 .testimonial-3-wrap {
-  background: #88ff4c;
+  background: #379209;
   padding: 30px;
   -webkit-box-shadow: 0 5px 30px -10px rgba(255, 255, 255, 0.5);
   box-shadow: 0 5px 30px -10px rgba(255, 255, 255, 0.5);
@@ -286,11 +329,11 @@ hr {
 }
 
 .btn {
-  border-radius: 30px;
+  /* border-radius: 30px; */
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   text-decoration: none;
 }
 .btn:active,
@@ -399,12 +442,7 @@ hr {
 .site-footer p {
   color: #fff;
 }
-.site-footer h2,
-.site-footer h3,
-.site-footer h4,
-.site-footer h5 {
-  color: #fff;
-}
+
 .site-footer a {
   color: rgba(255, 255, 255, 0.8);
   font-size: 15px !important;
@@ -462,6 +500,10 @@ hr {
 }
 .container-0:hover .overlayLeft {
   width: 100%;
+}
+
+.overlayLeft > img {
+  position: absolute;
 }
 .school-name {
   position: absolute;
@@ -550,6 +592,12 @@ hr {
 /* contact */
 .form-control {
   padding: 0.7em;
+  border-radius: 0 !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: lightgrey;
 }
 /* end of contact */
 
@@ -687,16 +735,32 @@ hr {
   top: 32%;
 }
 
-.card-shadow {
+/* .card-shadow {
   box-shadow: 3px 3px 10px lightgrey;
+} */
+
+.card {
+  box-shadow: 1px 2px 10px #ccc !important;
+  border: none !important;
+}
+
+.navbar-toggler {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  border: none;
 }
 
 /* end of news and events */
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (min-width: 450px) and (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 575.98px) {
   .logo {
-    width: 130px;
+    width: 110px;
   }
 
   .info-icon {
@@ -747,9 +811,13 @@ hr {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) {
   .logo {
     width: 145px;
+  }
+
+  h1 {
+    font-size: 2.2rem !important;
   }
 
   .info-icon {
@@ -799,7 +867,7 @@ hr {
   }
 }
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
   .logo {
     width: 150px;
   }
@@ -913,7 +981,7 @@ hr {
   }
 }
 
-@media (max-width: 520px) {
+@media (min-width: 300px) {
   .text-01 {
     font-size: 18px;
   }
